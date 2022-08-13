@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="25dp"
+        android:text="Student File" />
+
+    <ImageView
+        android:id="@+id/IMG"
+        android:layout_width="313dp"
+        android:layout_height="284dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/s1" />
+
+    <TextView
+        android:id="@+id/nameLabel"
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:text="Student Name:" />
+
+    <TextView
+        android:id="@+id/nameInput"
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:text="__________" />
+
+    <TextView
+        android:id="@+id/ageLabel"
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:text="Student Age:" />
+
+    <TextView
+        android:id="@+id/ageInput"
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:text="00" />
+
+    <TextView
+        android:id="@+id/gradeLabel"
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:text="Student Grade:" />
+
+    <TextView
+        android:id="@+id/gradeInput"
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:text="00" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="130dp"
+        android:text="Next Student" />
+</LinearLayout>
