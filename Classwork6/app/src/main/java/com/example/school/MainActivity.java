@@ -53,8 +53,8 @@ public class MainActivity extends AppCompatActivity {
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (c <8){
                 c++;
+                if(c<8){
                 name.setText(students.get(c).getStudentName());
                 age.setText(String.valueOf(students.get(c).getStudentAge()));
                 grade.setText(String.valueOf(students.get(c).getStudentGrade()));
@@ -63,13 +63,14 @@ public class MainActivity extends AppCompatActivity {
 
             }
                 else{
-                    c=0;
+                    for(int c2 = 8; c2>0;c2--){
+                        c--;
+                    }
 
                     name.setText(students.get(c).getStudentName());
                     age.setText(String.valueOf(students.get(c).getStudentAge()));
                     grade.setText(String.valueOf(students.get(c).getStudentGrade()));
                     studentIMG.setImageResource(students.get(c).getStudentIMG());
-                    c++;
                 }
 
                 }
